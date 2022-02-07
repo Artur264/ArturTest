@@ -1,0 +1,167 @@
+.acaunt {
+    background-image: url(../img/acaunt_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    margin-bottom: 138px;
+
+    @media screen and (max-width: @medium) {
+      background-image: url(../img/bg__security-mobile.png);
+    }
+
+
+    &__wrapper {
+        padding-top: 334px;
+        padding-bottom: 95px;
+
+        @media screen and (max-width: @medium) {
+            padding-top: 50px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: @medium) {
+            flex-wrap: wrap;
+        }
+
+        &-left {
+            position: relative;
+            max-width: 344px;
+
+            @media screen and (max-width: @medium) {
+                margin-bottom: 176px;
+
+            }
+        }
+
+        &-right {
+            position: relative;
+            max-width: 344px;
+        }
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: @white;
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: @white;
+    }
+
+    &__btn {
+
+        &-left {
+        position: absolute;
+        top: 257px;
+        left: 66px;
+        display: flex;
+        align-items: center;
+        background: #01D0B1;
+        border-radius: 100px;
+        padding: 12px 19px 10px 31px;
+        cursor: pointer;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        box-shadow: 0 0 40px 40px #01D0B1 inset, 0 0 0 0 #01D0B1;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px 0 #01D0B1 inset, 0 0 10px 4px #01D0B1;
+            color: black;
+        }
+
+        @media screen and (max-width: @medium) {
+            top: 213px;
+        }
+        }
+        
+        &-link {
+            font-family: Open Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: @white;
+            margin-right: 15px;
+            text-decoration: none;
+ 
+        }
+
+        &-svg {
+            width: 22px;
+            box-sizing: border-box;
+            transform: rotate(-45deg);
+            fill: @white;
+        }
+
+        &-right {
+            position: absolute;
+            top: 257px;
+            left: 66px;
+            display: flex;
+            align-items: center;
+            background: #1E1447;
+            border-radius: 100px;
+            padding: 12px 19px 10px 31px;
+            cursor: pointer;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            box-shadow: 0 0 40px 40px #1E1447 inset, 0 0 0 0 #1E1447;
+            -webkit-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+    
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 10px 0 #1E1447 inset, 0 0 10px 4px #1E1447;
+                color: black;
+            }
+
+            @media screen and (max-width: @medium) {
+                background: #01D0B1;
+            }
+            }
+            
+            &-link {
+                font-family: Open Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: @white;
+                margin-right: 15px;
+                text-decoration: none;
+            }
+    
+            &-svg {
+                width: 22px;
+                box-sizing: border-box;
+                transform: rotate(-45deg);
+                fill: @white;
+            }
+    }
+
+    
+}

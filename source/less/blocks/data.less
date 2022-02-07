@@ -1,0 +1,130 @@
+.data {
+    margin-bottom: 80px;
+
+    &__title {
+        position: relative;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: @blue;
+        
+
+        &-up{
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 340px;
+            height: 20px;
+            background: hsl(160, 85%, 49%);
+            top: 96px;
+            left: 362px;
+
+            @media screen and (max-width: @medium) {
+                top: 96px;
+                left: 9px;
+            }
+        }
+    }
+        &-active {
+            margin-bottom: 73px;
+        }
+    }
+
+}
+
+.block {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__info {
+        margin-right: 90px;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-bottom: 67px;
+
+        @media screen and (max-width: @medium) {
+            margin: 0 auto;
+            margin-bottom: 67px;
+        }
+
+        &-3 {
+            margin-right: 0;
+
+            @media screen and (max-width: @medium) {
+                margin-right: auto;
+            }
+        }
+
+        &-4 {
+            margin-bottom: 0;
+
+            @media screen and (max-width: @medium) {
+                margin-bottom: 67px;
+            }
+        }
+
+        &-5 {
+            margin-bottom: 0;
+
+            @media screen and (max-width: @medium) {
+                margin-bottom: 67px;
+            }
+        }
+
+        &-6 {
+            margin-right: 0;
+            margin-bottom: 0;
+
+            @media screen and (max-width: @medium) {
+                margin-right: auto;
+                margin-bottom: 67px;
+            }
+        }
+        
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: justify;
+        color: @blue;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @blue;
+    }
+
+    &__img {
+        margin-right: 14px;
+
+        &-1{
+            margin-right: 24px;
+        }
+    }
+
+    &__up {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}

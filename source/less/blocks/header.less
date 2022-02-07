@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+
+    @media screen and (max-width: @medium) {
+        padding-top: 28px
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -98px;
+        padding-top: 42px;
+
+        @media screen and (max-width: @medium) {
+            flex-wrap: wrap;
+            padding-top: 28px;
+        }
+    }
+
+    &__logo {
+
+        @media screen and (max-width: @medium) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__burger {
+
+        @media screen and (max-width: @medium) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.system {
+
+    margin-bottom: 70px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: @medium) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @blue;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: justify;
+        color: @blue;
+    }
+
+    &__img {
+        @media screen and (max-width: @medium) {
+            width: 350px;
+            height: 320px;
+        }
+    }
+}

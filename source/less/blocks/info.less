@@ -1,0 +1,99 @@
+.info {
+    background-image: url(../img/bg__header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    padding-top: 324px;
+    padding-bottom: 278px;
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @blue;
+        margin-bottom: 20px;
+
+        &-up {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 257px;
+                height: 18px;
+                background: hsl(160, 85%, 49%);
+                top: 112px;
+                left: 150px;
+
+                @media screen and (max-width: @medium) {
+                    top: 230px;
+                    left: -2px;
+                }
+        }
+        }
+
+        &-down {
+            position: relative;
+        }
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @blue;
+        margin-bottom: 34px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        background: #01D0B1;
+        border-radius: 100px;
+        padding: 12px 19px 10px 31px;
+        cursor: pointer;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        box-shadow: 0 0 40px 40px #01D0B1 inset, 0 0 0 0 #01D0B1;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px 0 #01D0B1 inset, 0 0 10px 4px #01D0B1;
+            color: black;
+        }
+    }
+
+    &__btn-link {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @white;
+        margin-right: 15px;
+        text-decoration: none;
+
+    }
+
+    &__btn-svg {
+        width: 22px;
+        box-sizing: border-box;
+        transform: rotate(-45deg);
+        fill: @white;
+
+    }
+
+}
